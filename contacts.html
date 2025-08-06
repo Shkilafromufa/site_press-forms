@@ -1,0 +1,67 @@
+<!DOCTYPE html>
+<html lang="ru">
+<head>
+  <meta charset="UTF-8">
+  <meta name="viewport" content="width=device-width, initial-scale=1.0">
+  <title>Контакты | MoldPro</title>
+  <link href="https://fonts.googleapis.com/css2?family=Roboto:wght@300;400;500;700&display=swap" rel="stylesheet">
+  <link rel="stylesheet" href="styles.css">
+</head>
+<body>
+  <header class="site-header">
+    <div class="container flex-between">
+      <div class="logo">MOLD<span class="accent">PRO</span></div>
+      <nav class="site-nav">
+        <a href="index.html">Главная</a>
+        <a href="services.html">Услуги</a>
+        <a href="about.html">О компании</a>
+        <a href="contacts.html">Контакты</a>
+        <a href="admin.html">Админ</a>
+      </nav>
+      <div class="burger" id="burger">
+        <span></span><span></span><span></span>
+      </div>
+    </div>
+  </header>
+
+  <main>
+    <section class="contacts">
+      <div class="container contact-grid">
+        <div class="contact-info">
+          <h1 class="section-title">Контакты</h1>
+          <p class="accent-text big">Получите расчёт стоимости за 24&nbsp;часа</p>
+          <ul>
+            <li><strong>Тел.:</strong> +7&nbsp;___&nbsp;___‑__‑__</li>
+            <li><strong>E‑mail:</strong> info@_____.ru</li>
+            <li><strong>Адрес производства:</strong> г.&nbsp;___, ул.&nbsp;___, д.&nbsp;___</li>
+            <li><strong>Время работы:</strong> Пн‑Пт 09:00‑18:00 (UTC+3)</li>
+          </ul>
+          <p>Напишите в <a href="#">WhatsApp</a> или <a href="#">Telegram</a> @_______ и прикрепите 3D‑модель для ускоренного расчёта.</p>
+        </div>
+        <form class="contact-form" id="quote">
+          <h3>Запросить расчёт</h3>
+          <label>Имя<input type="text" name="name" required></label>
+          <label>Телефон<input type="tel" name="phone" required></label>
+          <label>E‑mail<input type="email" name="email" required></label>
+          <label>Сообщение<textarea name="message" rows="4"></textarea></label>
+          <label class="file-label">
+            Прикрепить файл
+            <input type="file" name="file">
+          </label>
+          <button type="submit" class="btn accent">Отправить</button>
+        </form>
+      </div>
+    </section>
+  </main>
+
+  <footer class="site-footer">
+    <div class="container footer-flex">
+      <p>&copy; 2025 MoldPro. Все права защищены.</p>
+      <a href="#">Политика конфиденциальности</a>
+      <a href="tel:+7XXXXXXXXXX" class="footer-call btn accent">Позвонить</a>
+    </div>
+  </footer>
+
+  <script src="script.js"></script>
+</body>
+</html>
